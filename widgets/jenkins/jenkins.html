@@ -1,0 +1,13 @@
+<ul class="list-nostyle">
+  <li data-foreach-item="items">
+    <span class="line-item weather">
+      <img data-bind-src="item.health"></img>
+    </span>
+    <span class="line-item name" data-bind="item.name">&nbsp;</span>
+    <span class="line-item desc" data-bind="item.desc | default '&nbsp;'">&nbsp;</span>
+    <span data-bind="item.status"
+          data-bind-class="item.color | prepend 'line-item status '">&nbsp;</span>
+    <span class="line-item coverage"
+          data-bind="item.coverage | default '&nbsp;' ">&nbsp;</span>
+  </li>
+</ul>

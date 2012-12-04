@@ -1,0 +1,32 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [350, 324]
+  Dashing.numColumns = 3
+});
+</script>
+
+<% content_for(:title) { "My super sweet dashboard" } %>
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/logo.png"></div>
+    </li>
+
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="welcome" data-view="Text"
+           data-title="Convoy" data-text="VDN">
+      </div>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
+      <div data-id="jenkins" data-view="Jenkins" data-unordered="true"
+           data-title="Jenkins" data-moreinfo="Build status"></div>
+    </li>
+
+  </ul>
+</div>
